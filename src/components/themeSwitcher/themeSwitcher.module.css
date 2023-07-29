@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.themeLabel {
+    color: var(--subtext);
+}
+
+.themeSwitcher {
+  width: 45px;
+  height: 24px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--theme-switcher);
+}
+
+.toggler {
+  width: 20px;
+  height: 20px;
+  background-color: var(--toggler);
+  border-radius: 50%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .themeLabel {
+    display: none;
+  }
+}
