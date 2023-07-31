@@ -26,6 +26,9 @@ export default function Error() {
       <span>
         The Rate Limit Might Have Exceeded ! Please try after sometime
       </span>
+      <span>
+        ( It is Limited to 50 requests / hour )
+      </span>
     </div>
   );
 }
