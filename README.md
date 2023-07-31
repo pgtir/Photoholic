@@ -1,13 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Deployed at [https://photoholic-five.vercel.app/](https://photoholic-five.vercel.app/)
+## Deployed Link 
+Visit [https://photoholic-five.vercel.app/](https://photoholic-five.vercel.app/)
 
 ## Technologies Used 
-Next JS, SWR, CSS Modules, Redux Toolkit
+- Next JS
+- SWR
+- CSS Modules
+- Redux Toolkit
 
 ## Enpoints Used 
-For fetching Random Photos [https://unsplash.com/documentation#get-a-random-photo](https://unsplash.com/documentation#get-a-random-photo)
-For fetching User Info [https://unsplash.com/documentation#users](https://unsplash.com/documentation#users)
+- For fetching Random Photos [https://unsplash.com/documentation#get-a-random-photo](https://unsplash.com/documentation#get-a-random-photo)
+- For fetching User Info [https://unsplash.com/documentation#users](https://unsplash.com/documentation#users)
 
 ## Features
 
@@ -20,22 +23,25 @@ For fetching User Info [https://unsplash.com/documentation#users](https://unspla
 ## Screenshot Walkthrough
 
 - User's feed with infinite scroll
-
-  ![Feed](https://drive.google.com/file/d/ 1V2qQnLmrnh29gnUFiUmCFDCapotwzn6C/view?usp=sharing)
+  
+  ![Feed](https://github.com/pgtir/Photoholic/assets/87230033/be3e245d-5683-406b-90f2-f8ce0344fcdd)
+  
 
 - Profile Section after clicking on any of the feed's user profile
-
-  ![Profile Section](https://drive.google.com/file/d/14J_fIww4CVOhBuGysxCEEoKDG99KF436/view?usp=sharing)
+  
+  ![ProfileSection](https://github.com/pgtir/Photoholic/assets/87230033/39c37258-5ff2-431c-9756-fea4a3b332ad)
+  
 
 - Light Mode
-
-  ![Light Mode](https://drive.google.com/file/d/1Ay353O_6MH43MYksgToqyt5rbDYR9L0C/view?usp=sharing)
+  
+  ![LightMode](https://github.com/pgtir/Photoholic/assets/87230033/39b08aef-28e9-4961-a67a-fd67e279568d)
+  
 
 - List View of Photos
-
-  ![List View](https://drive.google.com/file/d/1-Qheub6mXcyZAcjWaJ_EqW8g1B083HOC/view?usp=sharing)
-
+  
+  ![ListView](https://github.com/pgtir/Photoholic/assets/87230033/c4804bde-9a6f-4ce1-871a-dcc4317c3552)
+  
+  
 - Responsive View
 
-  ![Responsive Layout](https://drive.google.com/file/d/1P5Dyjh7r1LwXg8LdeS48GBCtyRUuIEjB/view?usp=sharing)
-
+  ![Responsive](https://github.com/pgtir/Photoholic/assets/87230033/3240bf18-7452-458c-8d3a-46a3197228bc)
