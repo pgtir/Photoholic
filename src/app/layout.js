@@ -2,7 +2,8 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import AppBar from "@/components/AppBar/Appbar";
-import { ThemeProvider } from "@/context/ThemeContext";
+import { ThemeProvider } from "@/themeProvider/ThemeProvider";
+import StoreProvider from "@/redux/StoreProvider";
 
 config.autoAddCss = false;
 
@@ -19,15 +20,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
-        <ThemeProvider>
-          <div className="container">
-            <AppBar />
-            {children}
-          </div>
-        </ThemeProvider>
-      </body>
-    </html>
+    <StoreProvider>
+      <html lang="en">
+        <body className={poppins.className}>
+          <ThemeProvider>
+            <div className="container">
+              <AppBar />
+              {children}
+            </div>
+          </ThemeProvider>
+        </body>
+      </html>
+    </StoreProvider>
   );
 }

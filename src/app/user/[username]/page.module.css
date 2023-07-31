@@ -1,0 +1,21 @@
+.container {
+    padding: 12px 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+  }
+
+
+  @media only screen and (max-width: 1250px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .container {
+      width: 100%
+    }
+  }
+
+  

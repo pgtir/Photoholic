@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    gap: 20px;
+    font-size: var(--font-small);
+    padding: 0 16px;
+}
+
+.engage {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.downloadIcon {
+    height: 20px;
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.likeIcon {
+    height: 20px;
+    color: #f25278;
+    cursor: pointer;
+}

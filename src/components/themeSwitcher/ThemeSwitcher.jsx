@@ -1,20 +1,29 @@
-"use client"
+"use client";
 
-import { useContext } from "react"
-import styles from "./themeSwitcher.module.css"
-import { ThemeContext } from "@/context/ThemeContext"
+import styles from "./themeSwitcher.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "@/redux/slice";
 
 const ThemeSwitcher = () => {
-  const { toggleTheme,theme } = useContext(ThemeContext)
+  const { theme } = useSelector((state) => state.app);
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
-      <h4 className={styles.themeLabel} >Switch Theme</h4>
-      <div className={styles.themeSwitcher} onClick={toggleTheme}>
-        <div className={styles.toggler} style={theme === "light" ? {left: "2.5px"} : {right: "2.5px"}} >
-        </div>
+      <span className={styles.themeLabel}>
+        {theme === "light" ? "Light Mode" : "Dark Mode"}
+      </span>
+      <div
+        className={styles.themeSwitcher}
+        onClick={() => dispatch(toggleTheme())}
+      >
+        <div
+          className={styles.toggler}
+          style={theme === "light" ? { left: "2.5px" } : { right: "2.5px" }}
+        ></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ThemeSwitcher
+export default ThemeSwitcher;

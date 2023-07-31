@@ -1,0 +1,27 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  box-shadow: var(--boxShadow);
+  gap: 14px;
+  padding: 16px 0;
+  width: 620px;
+  margin: 0 auto;
+}
+
+.description {
+  display: inline-block;
+  font-size: var(--font-small);
+  padding: 0 16px;
+}
+
+.description::first-letter {
+  text-transform:capitalize;
+}
+
+@media only screen and (max-width: 760px) {
+  .postCard {
+    width: 100%;
+  }
+}

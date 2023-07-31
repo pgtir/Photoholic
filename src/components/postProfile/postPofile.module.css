@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    gap: 16px;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.userImg {
+    border-radius: 50%;
+    background-color: var(--image-bg);
+}
+
+@media only screen and (max-width: 500px) {
+    .username {
+        font-size: var(--font-small);
+    }
+  }
+

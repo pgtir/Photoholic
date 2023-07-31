@@ -1,0 +1,29 @@
+.container {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1px solid var(--subtext);
+  padding-bottom: 6px;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  height: 22px;
+  color: var(--subtext);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--primary-green);
+}
+
+.icon:active {
+  color: var(--primary-green);
+}

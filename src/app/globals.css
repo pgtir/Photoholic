@@ -14,6 +14,8 @@
   --primary-blue: #5367ff;
   --primary-green: #00d09c;
   --boxShadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+  --font-small: 13.5px;
+  --image-bg : hsl(228, 38%, 74%);
 }
 
 [data-theme="light"] {
@@ -23,7 +25,7 @@
   --text: hsl(230, 17%, 14%);
   --theme-switcher: hsl(230, 22%, 74%);
   --toggler: hsl(0, 0%, 100%);
-  --boxShadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+  --boxShadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 html,
@@ -46,11 +48,14 @@ a {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+}
+
+.img {
+  background-color: var(--image-bg);
 }
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }

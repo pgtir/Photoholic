@@ -13,7 +13,7 @@ const AppBar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Image src={logo} className={styles.img} />
+        <Image src={logo} alt="logo" className={styles.logoImg} />
         <h2 className={logoFont.className}>Photoholic</h2>
       </div>
       <ThemeSwitcher />

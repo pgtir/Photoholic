@@ -1,0 +1,125 @@
+.container {
+  width: 380px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  background-color: var(--bg-card);
+  align-self: flex-start;
+  border-radius: 8px;
+  box-shadow: var(--boxShadow);
+}
+
+.imgContainer {
+  border: 1px solid;
+  border-left-color: var(--primary-blue);
+  border-top-color: var(--primary-blue);
+  border-right-color: var(--primary-green);
+  border-bottom-color: var(--primary-green);
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.profileImg {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  text-align: center;
+  width: 100%;
+}
+.name {
+  font-size: large;
+}
+.username {
+  color: var(--subtext);
+  font-size: var(--font-small);
+}
+
+.followButton {
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 4px;
+  color: #fafafa;
+  padding: 4px;
+  letter-spacing: 0.06rem;
+  margin: 8px 0;
+}
+
+.engagement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.engage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.num {
+  font-size: large;
+}
+
+.label {
+  color: var(--subtext);
+  font-size: var(--font-small);
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    flex-direction: row;
+    padding: 20px 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    align-items: flex-start;
+    width: 90%;
+
+  }
+  .mainInfo {
+    text-align: start;
+    width: 350px;
+    flex-grow: 0;
+  }
+  .profileImg {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mainInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .profileImg {
+    height: 100px;
+    width: 100px;
+  }
+}
