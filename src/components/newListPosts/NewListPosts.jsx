@@ -9,7 +9,7 @@ import { useEffect } from "react";
 const NewListPosts = ({ pageNum, pageType, username}) => {
   const path =
     pageType === "feed"
-      ? `photos/random/?count=2&page=${pageNum}`
+      ? `photos/random/?count=5&page=${pageNum}`
       : `users/${username}/photos/?per_page=2&page=${pageNum}`;
 
   const { data, error, isLoading, mutate } = useFetch(path);

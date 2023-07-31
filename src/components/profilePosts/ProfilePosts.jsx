@@ -12,7 +12,7 @@ const ProfilePosts = ({ username }) => {
   const numOfLoads =
     currentView === "grid"
       ? Math.ceil(numProfilePosts / 12)
-      : Math.ceil(numProfilePosts / 5);
+      : Math.ceil(numProfilePosts / 6);
 
   return (
     <div className={styles.container}>
