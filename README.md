@@ -1,34 +1,41 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Deployed at [https://photoholic-five.vercel.app/](https://photoholic-five.vercel.app/)
 
-First, run the development server:
+## Technologies Used 
+Next JS, SWR, CSS Modules, Redux Toolkit
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Enpoints Used 
+For fetching Random Photos [https://unsplash.com/documentation#get-a-random-photo](https://unsplash.com/documentation#get-a-random-photo)
+For fetching User Info [https://unsplash.com/documentation#users](https://unsplash.com/documentation#users)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Light/dark mode toggle
+- Infinte Scroll for Posts
+- Caching API Response
+- Loading and Error States
+- Switching views from Grid to List for Profile Post
+- Responsive Layout
+## Screenshot Walkthrough
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- User's feed with infinite scroll
 
-## Learn More
+  ![Feed](https://drive.google.com/file/d/ 1V2qQnLmrnh29gnUFiUmCFDCapotwzn6C/view?usp=sharing)
 
-To learn more about Next.js, take a look at the following resources:
+- Profile Section after clicking on any of the feed's user profile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ![Profile Section](https://drive.google.com/file/d/14J_fIww4CVOhBuGysxCEEoKDG99KF436/view?usp=sharing)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Light Mode
 
-## Deploy on Vercel
+  ![Light Mode](https://drive.google.com/file/d/1Ay353O_6MH43MYksgToqyt5rbDYR9L0C/view?usp=sharing)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- List View of Photos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ![List View](https://drive.google.com/file/d/1-Qheub6mXcyZAcjWaJ_EqW8g1B083HOC/view?usp=sharing)
+
+- Responsive View
+
+  ![Responsive Layout](https://drive.google.com/file/d/1P5Dyjh7r1LwXg8LdeS48GBCtyRUuIEjB/view?usp=sharing)
+
