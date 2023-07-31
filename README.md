@@ -20,6 +20,21 @@ Visit [https://photoholic-five.vercel.app/](https://photoholic-five.vercel.app/)
 - Loading and Error States
 - Switching views from Grid to List for Profile Post
 - Responsive Layout
+- Dynamic Routing
+
+## API Rate Limit
+50 Requests Per Hour
+
+## Infine Scroll Approach
+In order to not reach the rate limit quickly, following things are implemented :
+- Feed is loading 5 posts in one go , so making required loads to be able to fetch 10 posts equal to 2
+- Grid Posts are loading 16 posts in one go as those posts will be large in no
+- List Posts are loading 6 posts in one go
+
+## Caching
+- useSWR hook has been used to fetch and cache API response data
+- automatic revalidations has been turned off to save API calls
+
 ## Screenshot Walkthrough
 
 - User's feed with infinite scroll
