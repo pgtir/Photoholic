@@ -11,9 +11,9 @@ const ProfilePosts = ({ username }) => {
   const { numProfilePosts } = useSelector((state) => state.app);
   const numOfLoads =
     currentView === "grid"
-      ? Math.ceil(numProfilePosts / 6)
-      : Math.ceil(numProfilePosts / 2);
-      
+      ? Math.ceil(numProfilePosts / 12)
+      : Math.ceil(numProfilePosts / 5);
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
