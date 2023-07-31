@@ -7,7 +7,7 @@ const Feed = () => {
       <div className={styles.labelContainer}>
         <span className={styles.label}>My Feed</span>
       </div>
-      <InfiniteScroll numOfLoads={5} viewType="list" pageType="feed" />
+      <InfiniteScroll numOfLoads={3} viewType="list" pageType="feed" />
     </div>
   );
 };
