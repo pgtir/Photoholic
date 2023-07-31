@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import AppBar from "@/components/AppBar/Appbar";
 import { ThemeProvider } from "@/themeProvider/ThemeProvider";
 import StoreProvider from "@/redux/StoreProvider";
+import AppBar from "@/components/appbar/Appbar";
 
 config.autoAddCss = false;
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <body className={poppins.className}>
           <ThemeProvider>
             <div className="container">
-              <AppBar />
+              <AppBar/>
               {children}
             </div>
           </ThemeProvider>
